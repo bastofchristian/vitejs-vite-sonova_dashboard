@@ -1,73 +1,26 @@
-# React + TypeScript + Vite
+# Sonova CRM Transformation: Executive Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the interactive Financial & Operational Dashboard for the HSLU Business Case: "CRM Transformation at Sonova Holding AG". 
 
-Currently, two official plugins are available:
+The dashboard mathematically and visually supports the proposed CHF 63.1M CRM investment, illustrating the Total Cost of Ownership (TCO), the 18-month ROI trajectory, and the mitigation of "Silent Churn" through Agentforce AI and IoT telemetry.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Preview (One-Click)
 
-## React Compiler
+You can run and view the interactive dashboard directly in your browser without installing anything locally. Simply click the link below:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 **[Open Dashboard in StackBlitz](https://stackblitz.com/github/bastofchristian/vitejs-vite-sonova_dashboard)**
 
-## Expanding the ESLint configuration
+## 📊 Key Visualizations Included
+- **Cumulative ROI & Breakeven:** A 36-month trajectory mapping the initial CHF 63.1M outlay to the 18-month breakeven point.
+- **Agentforce AI vs. Silent Churn:** A radar chart mapping technical capabilities (IoT Telemetry, Predictive Maintenance, etc.) comparing Legacy IT with the new CRM architecture.
+- **CAPEX/OPEX Breakdown:** TCO distribution across Software Licenses, Middleware, Implementation, and Change Management.
+- **Operational Efficiency Gains:** Demonstrating the projected 30% drop in manual B2B requests and the +15% increase in Customer Lifetime Value (CLV).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 💻 Local Installation (For Reviewers/Developers)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+If you prefer to inspect or run the dashboard locally on your machine, follow these steps:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**1. Clone the repository**
+```bash
+git clone [https://github.com/bastofchristian/vitejs-vite-sonova_dashboard.git](https://github.com/bastofchristian/vitejs-vite-sonova_dashboard.git)
+cd vitejs-vite-sonova_dashboard
